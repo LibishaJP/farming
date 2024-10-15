@@ -424,3 +424,126 @@ input{
 .copyright-1{
     display: flex;
 }
+
+@media only screen and (max-width: 768px) {
+  /* Header */
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list {
+    padding: 0;
+  }
+
+  .list li {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .agri {
+    padding-left: 5%;
+    padding-top: 10%;
+    text-align: center;
+  }
+
+  .agri h1, .agri h2, .agri p {
+    font-size: smaller;
+  }
+
+  .container {
+    height: 70vh;
+  }
+
+  /* Adjust the fruits section */
+  .fruitveg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .img-container {
+    width: 45%;
+    margin: 10px;
+  }
+
+  .img-container img {
+    height: auto;
+    width: 100%;
+  }
+
+  /* About section */
+  .intro {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+  }
+
+  .project-explore {
+    flex-direction: column;
+  }
+
+  .img-project img {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .contact {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact1, .form {
+    width: 90%;
+  }
+
+  .newsndarticles {
+    flex-direction: column;
+  }
+
+  .news-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+/* For larger screens */
+@media only screen and (min-width: 769px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .fruitveg {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .img-container {
+    width: 30%;
+    margin: 20px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.video {
+  background-size: cover;
+  height: auto;
+}
+h1 {
+  font-size: 2.5vw;
+}
+
+h2 {
+  font-size: 2vw;
+}
+
+p {
+  font-size: 1.5vw;
+}
+
+
